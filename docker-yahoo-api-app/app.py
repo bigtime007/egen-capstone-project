@@ -116,7 +116,7 @@ if __name__ == "__main__":
             
         svc.publish_message_to_topic(message)
         
-        # Que Timer
+        # Queue Timer
         sleep(30)
    
     
