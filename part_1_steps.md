@@ -33,7 +33,7 @@ Now you can list every api that google will allow however thats alot
 
 **Instead we need only these API for now. Also APIs for Part2 will be actived now as well**
 
-`gcloud services enable appengine.googleapis.com bigquery.googleapis.com bigquerystorage.googleapis.com`
+`gcloud services enable appengine.googleapis.com bigquery.googleapis.com bigquerystorage.googleapis.com composer.googleapis.com`
 
 `gcloud services enable cloudapis.googleapis.com cloudbuild.googleapis.com cloudfunctions.googleapis.com `
 
