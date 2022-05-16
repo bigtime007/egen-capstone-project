@@ -60,9 +60,9 @@ Lookup DAG Bucket:
     
 Add Service Acct for Composer
     
-`gcloud iam service-accounts create composer-8675309 \
-    --description="Used to access bq and buckets" \
-    --display-name="composer-project-role"`
+`gcloud iam service-accounts create composer-8675309 \`
+    `--description="Used to access bq and buckets" \`
+    `--display-name="composer-project-role"`
 
 **Step 2**
     
@@ -74,7 +74,8 @@ First add bigquery access admin
 `gcloud projects add-iam-policy-binding egen-capstone-project \
     --member="serviceAccount:composer-8675309@egen-capstone-project.iam.gserviceaccount.com" \
     --role="roles/bigquery.admin"`
-Second add storage admin access
+
+ Second add storage admin access
     
 `gcloud projects add-iam-policy-binding egen-capstone-project \
     --member="serviceAccount:composer-8675309@egen-capstone-project.iam.gserviceaccount.com" \
