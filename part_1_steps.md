@@ -33,7 +33,7 @@ Now you can list every api that google will allow however thats alot
 
 **Instead we need only these API for now. Also APIs for Part2 will be actived now as well**
 
-`gcloud services enable appengine.googleapis.com bigquery.googleapis.com bigquerystorage.googleapis.com`
+`gcloud services enable appengine.googleapis.com bigquery.googleapis.com bigquerystorage.googleapis.com composer.googleapis.com`
 
 `gcloud services enable cloudapis.googleapis.com cloudbuild.googleapis.com cloudfunctions.googleapis.com `
 
@@ -120,9 +120,9 @@ We will be using Google GKE for the container service. I will also give instruct
 
 **First**
 
-`gcloud container clusters create capstone-micro-servce --num-nodes 1 --scopes pubsub,gke-default`
+`gcloud container clusters create capstone-micro-service --num-nodes 1 --scopes pubsub,gke-default`
 
-Your should see: *`Creating cluster capstone-micro-servce in us-central1-f... Cluster is being configured...⠏`*
+Your should see: *`Creating cluster capstone-micro-service in us-central1-f... Cluster is being configured...⠏`*
 
 Once the cluster is created verfy the following:
 
@@ -170,20 +170,3 @@ By now if your log files are showing a 200 response you should have files in you
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------
-
-`ZONE_NAME=us-central1-f`
-
-`gcloud config set compute/zone $ZONE_NAME`
