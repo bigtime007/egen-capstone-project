@@ -1,0 +1,157 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "fromCurrency",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "timeStamp",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "regularMarketPrice",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "regularMarketChange",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "regularMarketChangePercent",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "simpleMovingAVG",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "regularMarketTime",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "regularMarketDayLow",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "regularMarketDayHigh",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "regularMarketDayRange",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "regularMarketVolume",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "volume24Hr",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "volumeAllCurrencies",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "averageDailyVolume3Month",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "averageDailyVolume10Day",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyTwoWeekLowChange",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyTwoWeekLowChangePercent",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyTwoWeekRange",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyTwoWeekHighChange",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyTwoWeekHighChangePercent",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyTwoWeekLow",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyTwoWeekHigh",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyDayAverage",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyDayAverageChange",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fiftyDayAverageChangePercent",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "twoHundredDayAverage",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "twoHundredDayAverageChange",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "twoHundredDayAverageChangePercent",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "marketCap",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "priceHint",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "circulatingSupply",
+    "type": "INTEGER"
+  }
+]
