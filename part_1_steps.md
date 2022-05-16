@@ -170,20 +170,3 @@ By now if your log files are showing a 200 response you should have files in you
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------
-
-`ZONE_NAME=us-central1-f`
-
-`gcloud config set compute/zone $ZONE_NAME`
