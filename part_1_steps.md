@@ -120,9 +120,9 @@ We will be using Google GKE for the container service. I will also give instruct
 
 **First**
 
-`gcloud container clusters create capstone-micro-servce --num-nodes 1 --scopes pubsub,gke-default`
+`gcloud container clusters create capstone-micro-service --num-nodes 1 --scopes pubsub,gke-default`
 
-Your should see: *`Creating cluster capstone-micro-servce in us-central1-f... Cluster is being configured...⠏`*
+Your should see: *`Creating cluster capstone-micro-service in us-central1-f... Cluster is being configured...⠏`*
 
 Once the cluster is created verfy the following:
 
