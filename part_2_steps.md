@@ -1,4 +1,4 @@
-# Capstone Project Part 1
+# Capstone Project Part 2
 
 ### Make Big Query table
 
@@ -60,9 +60,9 @@ Lookup DAG Bucket:
     
 Add Service Acct for Composer
     
-`gcloud iam service-accounts create composer-8675309 \`
-    `--description="Used to access bq and buckets" \`
-    `--display-name="composer-project-role"`
+    `gcloud iam service-accounts create composer-8675309 \`
+        `--description="Used to access bq and buckets" \`
+        `--display-name="composer-project-role"`
 
 **Step 2**
     
