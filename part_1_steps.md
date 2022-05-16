@@ -131,6 +131,8 @@ Once the cluster is created verfy the following:
 **Second**
 Locate the go the folder that contains: Dockerfile, requirement.txt, app.py, etc..
 
+In the file named apikey.py. Insert your api key for yahoo. Save it before committing to google builds.
+
 Run the following command
 
 `gcloud builds submit   --tag gcr.io/$GOOGLE_CLOUD_PROJECT/yahoo-api-pubsub-v1` 
