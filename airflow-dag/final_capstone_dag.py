@@ -138,7 +138,7 @@ def upload_df_to_bq(): #clean_csv_file, credentials, table_id
     df = pandas.read_csv(clean_csv_file)
     client = bigquery.Client.from_service_account_json(credentials)
     table = client.get_table(table_id)
-    job_config = bigquery.LoadJobConfig(schema=table.schema)
+    job_config = bigquery.LoadJobConfig(schema=table.schema, write_disposition=bigquery.WriteDisposition.WRITE_APPEND)
     load_job = client.load_table_from_dataframe(dataframe=df, destination=table_id, job_config=job_config)
     output = load_job.result()
     return f'upload output: {output}'
