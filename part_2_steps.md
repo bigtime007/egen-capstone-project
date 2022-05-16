@@ -42,13 +42,14 @@ gcloud config set project <your-project-id>
 `gcloud composer environments create capstone-airflow --location us-central1 --node-count 3 --machine-type=n1-standard-1 --disk-size 30 --image-version composer-1.18.7-airflow-2.2.3 --scheduler-count=1 --python-version 3 --zone us-central1-a`
 
 *Ref: https://cloud.google.com/composer/docs/how-to/accessing/airflow-web-interface*
+
 *gcloud composer environments describe ENVIRONMENT_NAME --location LOCATION*
 
 **Lookup URL of aphache airflow**
 
-`gcloud composer environments describe capstone-airflow --location us-central1 | grep "airflowUri:"
+`gcloud composer environments describe capstone-airflow --location us-central1 | grep "airflowUri:"`
 
-Lookup DAG Bucket:
+**Lookup DAG Bucket:**
 
 `gcloud composer environments describe capstone-airflow --location us-central1 | grep "dagGcsPrefix:"`
 
@@ -103,7 +104,7 @@ gcloud iam service-accounts keys create egen-capstone-project-bucket-bq.json \
     
 **Copy key while still in folder**
 
-AF_BUCKET = <your-active-composer-bucket
+AF_BUCKET = <your-active-composer-bucket>
                                            
 `AF_BUCKET=`
                                            
