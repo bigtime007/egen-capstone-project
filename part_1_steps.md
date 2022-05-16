@@ -102,7 +102,7 @@ Now lets pull our message.
 
 Navigate to the "cloud-function" folder
 
-`cd ~/egen-capstone/cloud-function`
+`cd ~/egen-capstone-project/pub-sub-trigger-function/function-source-code`
 
 Run the list command to verify everything is there: requirements.txt main.py etc.. 
 
