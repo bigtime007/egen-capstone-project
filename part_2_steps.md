@@ -93,8 +93,9 @@ Second add storage admin access
 
 **Step 4**
     
-# Copy key while still in folder
-# AF_BUCKET = <your-active-composer-bucket
+**Copy key while still in folder**
+
+AF_BUCKET = <your-active-composer-bucket
                                            
 `AF_BUCKET=`
                                            
@@ -103,8 +104,9 @@ Second add storage admin access
 
 **Step 5**
                                            
-# Copy DAG file to bucket/dags folder
-gsutil cp final_capstone_dag.py $AF_BUCKET/dags/`
+**Copy DAG file to bucket/dags folder**
+                                           
+`gsutil cp final_capstone_dag.py $AF_BUCKET/dags/`
 
 
 
