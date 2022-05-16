@@ -29,8 +29,6 @@ Set Composer location
 
 `gcloud config set composer/location us-central1`
 
-`gcloud services enable composer.googleapis.com`
-
 `gcloud composer environments create capstone-airflow --location us-central1 --node-count 3 --machine-type=n1-standard-1 --disk-size 30 --image-version composer-1.18.7-airflow-2.2.3 --scheduler-count=1 --python-version 3 --zone us-central1-a`
 
 *Ref: https://cloud.google.com/sdk/gcloud/reference/composer/environments/create*
