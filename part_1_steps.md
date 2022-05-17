@@ -86,19 +86,7 @@ You should get:
 
 `gcloud pubsub topics create capstone-topic`
 
-**Second we need a subscription** 
-
-`gcloud pubsub subscriptions create capstone-topic-sub --topic=capstone-topic`
-
-To confirm every thing is working lets do some testing by publishing a message.
-
-`gcloud pubsub topics publish capstone-topic --message="hello"`
-
-Now lets pull our message.
-
-`gcloud pubsub subscriptions pull capstone-topic-sub --auto-ack`
-
-**Third we need a Trigger Cloud Function**
+**Second we need a Trigger Cloud Function**
 
 Navigate to the "cloud-function" folder
 
@@ -113,6 +101,8 @@ Now we are going to deploy the function from the cli using the following. Every 
 `gcloud functions deploy capstone-pubsub-trigger --trigger-topic capstone-topic --runtime python39 --entry-point process`
 
 You should see the following *`Deploying function (may take a while - up to 2 minutes)...⠹`*  Once its done deploying you should see ouput letting you know bulid id, runtime, lablels, status, versionID, etc..
+
+When the trigger function is deployed it will also create a subscription for the topic. Example: subscriptions/gcf-capstone-pubsub-trigger-us-central1-capstone-topic
 
 ### Deploy a docker image w/GKE
 
