@@ -74,18 +74,13 @@ def get_combined_records():
 
     for blob in blobs:
         filename = blob.path.replace('/', '_')
-        print(f"Downloading file {filename}")
-
-        if filename == '_b_capstone-project-yahoo-api-raw-data_o_yahoo-api-bin%2F':
-            pass
-
-        else:    
-            blob.download_to_filename(f'{working_dir}{filename}')
-            print(f"Concat...{filename} together into one dataframe")
-            file_df = pandas.read_csv(f'{working_dir}{filename}')
-            combined_df = combined_df.append(file_df)
-            print(f'deleting file{filename}')
-            blob.delete()
+        print(f"Downloading file {filename}")           
+        blob.download_to_filename(f'{working_dir}{filename}')
+        print(f"Concat...{filename} together into one dataframe")
+        file_df = pandas.read_csv(f'{working_dir}{filename}')
+        combined_df = combined_df.append(file_df)
+        print(f'deleting file{filename}')
+        blob.delete()
         
     if len(combined_df) > 0:
         combined_file_name = f"combined_files.csv"
